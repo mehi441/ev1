@@ -1,0 +1,53 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: rgb(33, 36, 52);
+    padding: 10px;
+}
+
+.header .menu{
+    display: inline-block;
+    width: 400px;
+    margin-left: 500px;
+    text-align: center;
+}
+
+.header .menu a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 32px;
+}
+
+.header .menu a:hover{
+    color: #ccc;
+    border-bottom: 2px solid white;
+}
+
+.par1{
+    width: 100%;
+    height: 600px;
+    background-attachment: fixed;
+    border: thin solid red;
+    background-image: url("../img/img1.jpg")
+}
+
+.par2{
+    width: 100%;
+    height: 600px;
+    background-attachment: fixed;
+    border: thin solid red;
+    background-image: url("../img/img3.jpg")
+}
+
+.par3{
+    width: 100%;
+    height: 600px;
+    background-attachment: fixed;
+    border: thin solid red;
+    background-image: url("../img/img6.jpg")
+}
