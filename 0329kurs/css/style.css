@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+[class*="col-"]{
+    float: left;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.col-1{
+    width: 8.33%;
+}
+
+.col-2{
+    width: 16.66%;
+}
+
+.col-3{
+    width: 25%;
+}
+
+.col-4{
+    width: 33.33%;
+}
+
+.col-5{
+    width: 41.66%;
+}
+
+.col-6{
+    width: 50%;
+}
+
+.col-7{
+    width: 58.33%;
+}
+
+.col-8{
+    width: 66.66%;
+}
+
+.col-9{
+    width: 75%;
+}
+
+.col-10{
+    width: 83.33%;
+}
+
+.col-11{
+    width: 91.66%;
+}
+
+.col-12{
+    width: 100%;
+}
+
+
+
+
+#books .image img{
+    width: 100%;
+}
+
+#books .item .image{
+    position: relative;
+}
+
+/* .overlay{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(37, 37, 37, 0);
+} */
+
+#books .item:hover .overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 91%;
+    height: 95%;
+    background-color: rgba(37, 37, 37, 0.5);
+}
+
+/* #books .item .overlay:hover link{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transition: all 2s;
+} */
+
+
+#books .image img a:hover{
+
+}
+
+
+
+
+#books .item .name{
+
+}
+#books .item .name h4{
+    display: inline-block;
+}
+
+#books .item .name h5{
+    width: 90px;
+    height: 25px;
+    background-color: red;
+    text-align: center;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+#books  .item span.price{
+    float: right;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
