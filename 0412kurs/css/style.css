@@ -1,0 +1,84 @@
+.korner{
+    width: 150px;
+    height: 150px;
+    background-color: red; 
+    animation: move;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+   
+}
+
+/* @keyframes move{
+
+
+    0%{ transform: translate(0px,0px)}
+    12%{transform: translate(200px,200px)}
+    24%{ transform: translate(400px,0px) }
+    36%{ transform: translate(600px,200px)}
+    49%{ transform: translate(600px,0px)}
+    63%{ transform: translate(400px,200px)}
+    76%{ transform: translate(200px,0px)}
+    88%{ transform: translate(0px,200px)}
+    100%{ transform: translate(0px,0px)}
+
+
+
+}
+
+
+
+
+.korne{
+    width: 150px;
+    height: 150px;
+    background-color: red; 
+    animation: mov;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+   
+}
+
+@keyframes mov{
+
+
+    0%{ transform: translate(0px,0px)}
+    12%{transform: translate(200px,200px)}
+    24%{ transform: translate(400px,0px) }
+    36%{ transform: translate(600px,200px)}
+    49%{ transform: translate(600px,0px)}
+    63%{ transform: translate(400px,200px)}
+    76%{ transform: translate(200px,0px)}
+    88%{ transform: translate(0px,200px)}
+    100%{ transform: translate(0px,0px)}
+
+
+
+} */
+
+.elza{
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    line-height: 0px;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+.elza img{
+    width:200px;
+    position: relative;
+    top:50px;
+    left: 50px;
+}
+
+.elza img{
+    max-width: 100%;
+    transform: scale(0.5);
+    transition: 2s;
+}
+
+.elza:hover img{
+    transform: scale(1.2);
+    transform: rotate(45deg);
+}
