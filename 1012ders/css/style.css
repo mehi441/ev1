@@ -1,0 +1,133 @@
+
+
+#esas{
+    width: 100%;
+    
+    background: url("../img/back.jpg");
+    
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 0;
+}
+
+.metn{
+    width: 100%;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.metn::before{
+    content: "";
+    width: 90%;
+    height: 90%;
+    background-color: red;
+    position: absolute;
+    display: block;
+    top: 5%;
+    right: 5%;
+    opacity: 0;
+     z-index: 10;
+}
+
+
+
+
+.metn:hover::before{
+    opacity: 0.4;
+   
+}
+
+
+.metn:hover img:first-child{
+    transform: scale(1.2);
+    transition: all 0.4s linear;
+}
+
+.metn:hover img:nth-child(2){
+    opacity: 0.8;
+    transform: scale(1.4);
+    transition: all 0.4s linear;
+    z-index: 12;
+}
+
+
+
+.metn img:first-child{
+    max-width: 100%;
+    transition: all 0.4s linear;
+
+}
+
+.metn img:nth-child(2){
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    top: 37%;
+    right: 37%;
+    opacity: 0;
+    
+}
+
+.col-6{
+    flex-basis: 50%;
+    overflow: hidden;
+}
+
+.col-12{
+    flex-basis: 100%;
+}
+
+.item{
+    padding-top: 100px;
+    position: relative;
+    text-align: center;
+    padding-bottom: 30px; 
+
+}
+
+.item h3{
+    font-family: sans-serif;
+    color: rgba(255, 255, 255, 0.349);
+    position: relative;
+    display: inline-block;
+
+}
+ 
+.item h3::before{
+    content: "";
+    width: 50px;
+    border: 1px solid orange;
+    position: absolute;
+    top: -2px;
+    left: -55px;
+    
+}
+
+.item h1{
+    color: white;
+    line-height: 10px;
+    font-size: 48px;
+    font-weight: bold;
+    font-family: sans-serif;
+
+}
+.item h1>span{
+    color: orange;
+
+}
+
+.item p{
+    font-family: sans-serif;
+
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.603);
+    
+
+}
