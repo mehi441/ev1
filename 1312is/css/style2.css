@@ -1,0 +1,74 @@
+.row{
+
+}
+
+/* .item{
+    display: inline-block;
+} */
+
+
+
+
+.item p:first-child{
+    float: right;
+}
+
+.item p{
+    display: inline-block;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    line-height: 30px;
+}
+
+.item p>i{
+    color: aqua;
+}
+.clearfix{
+    clear: both;
+}
+
+h1{
+    color: blue;
+}
+
+h1>span{
+    font-size: 20px;
+    color: black;
+}
+
+.item h5{
+    float: right;
+    line-height: 40px
+}
+
+.list-group{
+    background-color: black;
+    /* background-color: #fff; */
+    color: white;
+}
+.list-group ul li{
+    /* background-color: #fff; */
+    
+
+}
+.list-group-item{
+    background-color: unset;
+}
+
+#tool{
+    background-color: black;
+}
+
+/* .container-fluid{
+    background-color: black;
+} */
+
+.row a{
+    text-decoration: none;
+    color: aliceblue;
+    
+}
+
+.list-group-item:hover{
+    background-color: red;
+}

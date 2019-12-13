@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.bgcolor{
+    background-color: #bd5d38;
+    height: 100%;
+}
+
+.posleft{
+    position: fixed;
+    width: 25%;
+    padding: 0%;
+}
+
+
+.profile-img{
+    padding-top: 135px;
+    margin-left: 93px;
+}
+
+
+
+.profile-img .pimg{
+    width: 150px;
+    border: 8px solid #ca7d69;
+    border-radius: 100%;
+
+}
+
+.profile-img .pimg img{
+    width: 100%;
+}
+
+.menuitems{
+    padding-top: 30px;
+    text-align: center;
+}
+
+.menuitems .list-group-item {
+    display: block;
+    padding: .75rem 1.25rem;
+    background-color: #bd5d38;
+    text-align: center;
+}
+
+.menuitems ul.menu li a{
+    text-decoration: none;
+    padding-top: 10px;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 1s;
+
+}
+li a{
+    color: #ca7d69;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
