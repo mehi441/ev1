@@ -1,0 +1,11 @@
+.dog{
+    width: 300px;
+    height: 140px;
+    border: 2px solid red;
+    margin-top: 40px;
+
+}
+
+.tom{
+    display: none;
+}
