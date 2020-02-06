@@ -1,0 +1,15 @@
+@import "variables";
+@import "extends";
+
+@import "home";
+@import "slidebar";
+@import "pricing";
+@import "blog";
+@import "login";
+
+.container{
+    width: 1040px;
+}
+body{
+    font-family: $main-font;
+}

@@ -1,0 +1,541 @@
+#home {
+ @extend %myNavbar;
+
+  #myHeader {
+    background-image: url(../img/main-banner.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: auto;
+    position: relative;
+    .bGround {
+      span {
+        position: absolute;
+        border-radius: 50%;
+      }
+      .span-1 {
+        left: -4%;
+        bottom: auto;
+        background: rgba(255, 255, 255, 0.1);
+        width: 150px;
+        height: 150px;
+      }
+      .span-2 {
+        right: 4%;
+        top: 10%;
+        background: rgba(255, 255, 255, 0.1);
+        width: 50px;
+        height: 50px;
+      }
+      .span-3 {
+        top: 280px;
+        right: 5.66666%;
+        background: rgba(255, 255, 255, 0.3);
+        width: 50px;
+        height: 50px;
+      }
+      .span-4 {
+        top: 320px;
+        right: 7%;
+        background: rgba(255, 255, 255, 0.15);
+        height: 75px;
+        width: 75px;
+      }
+      .span-5 {
+        top: 38%;
+        left: 1%;
+        right: auto;
+        background: rgba(255, 255, 255, 0.05);
+        height: 100px;
+        width: 100px;
+      }
+      .span-6 {
+        width: 200px;
+        height: 200px;
+        top: 44%;
+        left: 10%;
+        right: auto;
+        background: rgba(255, 255, 255, 0.15);
+      }
+      .span-7 {
+        bottom: 50%;
+        right: 36%;
+        background: rgba(255, 255, 255, 0.04);
+        height: 50px;
+        width: 50px;
+      }
+      .span-8 {
+        bottom: 70px;
+        right: 2%;
+        background: rgba(255, 255, 255, 0.2);
+        width: 100px;
+        height: 100px;
+      }
+      .span-9 {
+        bottom: 1%;
+        right: 2%;
+        background: rgba(255, 255, 255, 0.1);
+        width: 50px;
+        height: 50px;
+      }
+      .span-10 {
+        bottom: 1%;
+        left: 1%;
+        right: auto;
+        background: rgba(255, 255, 255, 0.05);
+        width: 100px;
+        height: 100px;
+      }
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(150deg, #281483 15%, #8f6ed5 70%, #d782d9 94%);
+        opacity: 0.5;
+      }
+    }
+
+    .divForHeader {
+      padding: 200px 0;
+      display: inline-block;
+      .divForTitle {
+        h1 {
+          font-size: 44px;
+          color: white;
+          font-weight: 700;
+        }
+        h4 {
+          color: white;
+          font-size: 24px;
+          padding-top: 10px;
+        }
+      }
+      .divForForm {
+        height: auto;
+        background-color: rgba(255, 255, 255, 0.1);
+        margin-top: 45px;
+        border-radius: 50px;
+        width: 100%;
+        padding: 9px 0;
+        .col-auto {
+          padding: 0 30px;
+          .form-control {
+            font-size: $text-size;
+            background-color: rgba(255, 0, 0, 0);
+            border: 0 solid #5e72e4;
+            color: white;
+            padding: 0 1px;
+            height: 44px;
+            &:focus {
+              box-shadow: 0 0 0 0;
+              border: 1px solid $main-color;
+            }
+            &::placeholder {
+              color: white;
+            }
+          }
+        }
+        .custom-select {
+          background-image: none;
+          background-color: rgba(255, 255, 255, 0);
+          border: 0;
+          color: rgba(255, 255, 255, 0.459);
+          &:focus {
+            box-shadow: 0 0 0 0;
+          }
+        }
+        .btn-primary {
+          color: black;
+          border-radius: 40px;
+          height: 50px;
+          width: 116px;
+          margin-right: 12px;
+          background-color: white;
+          font-weight: 600;
+          border: 0;
+          &:focus {
+            box-shadow: 0 0 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  #myFirstOwl {
+    .container-fluid {
+      // padding: 0;
+      .col-lg-12 {
+        padding: 0;
+      }
+    }
+    .owlTitle {
+      text-align: center;
+      padding: 100px 0 40px;
+      h1 {
+        color: $title-color;
+        font-weight: 700;
+        padding-bottom: 10px;
+      }
+      h6 {
+        color: $main-color;
+        font-weight: 500;
+        font-size: $sec-title-size;
+        line-height: 1.7;
+      }
+    }
+    .divForOwl {
+      padding-bottom: 70px;
+      .owl-stage {
+        margin-bottom: 20px;
+        .owl-item {
+          .item {
+            width: 325px;
+            height: 300px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            &:hover {
+              img {
+                transition: 1s;
+                transform: scale(1.1);
+              }
+              .bGroundOwl {
+                transition: 1s;
+                background: linear-gradient(-20deg, #5e72e4 0, #21d4fd 100%);
+                opacity: 0.9;
+              }
+            }
+            img {
+              transition: 1s;
+
+              width: auto;
+              height: 100%;
+            }
+            .bGroundOwl {
+              transition: 1s;
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background-image: linear-gradient(to right, #434343 0, #000 100%);
+              background-blend-mode: multiply, multiply;
+              opacity: 0.6;
+            }
+            .overlay {
+              text-align: center;
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              color: white;
+              padding: 90px 0;
+              .myIcon {
+                i {
+                  font-size: 32px;
+                  margin-bottom: 25px;
+                }
+              }
+              h4 {
+                font-size: $sec-title-size;
+                font-weight: 700;
+                margin-bottom: 14px;
+              }
+              h6 {
+                font-size: 15px;
+                font-weight: 300;
+                // display: inline-block;
+                color: rgba(255, 255, 255, 0.7);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #mySecondOwl {
+    background-color: #f4f5f7;
+    padding-bottom: 70px;
+    .container {
+      overflow: hidden;
+    }
+    .divForTitle {
+      text-align: center;
+      padding: 100px 0 40px;
+      h4 {
+        font-size: $title-size;
+        color: $title-color;
+        font-weight: 700;
+        padding-bottom: 10px;
+      }
+      h6 {
+        color: $main-color;
+        font-weight: 500;
+        font-size: $sec-title-size;
+        line-height: 1.7;
+      }
+    }
+    .divForOwl {
+      .owl-stage-outer {
+        overflow: visible;
+        .owl-item {
+          transition: 0.5s linear;
+          &:hover {
+            transform: translateY(-20px);
+          }
+          .item {
+            height: 320px;
+            .forImg {
+              overflow: hidden;
+              width: 100%;
+              height: 100%;
+              img {
+                width: auto;
+              }
+            }
+
+            .forLogo {
+              background-color: white;
+              position: absolute;
+              top: 193px;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              .forSpans {
+                position: absolute;
+                width: 100%;
+                span {
+                  top: 10px;
+                  color: rgb(38, 67, 233);
+                  background-color: rgba(203, 210, 246, 0.5);
+                  border-radius: 10px;
+                  font-size: 10.5px;
+                  padding: 5.5px 9px;
+                  font-weight: 600;
+                  line-height: 1;
+                  &:first-child {
+                    position: absolute;
+                    left: 10px;
+                  }
+                  &:nth-child(2) {
+                    position: absolute;
+                    right: 10px;
+                  }
+                }
+              }
+              .forTitle {
+                text-align: center;
+                h3 {
+                  padding-top: 50px;
+                  font-size: $text-size;
+                  color: $title-color;
+                  font-weight: 700;
+                }
+                h5 {
+                  font-size: $text-size;
+                  font-weight: 400;
+                  line-height: 1.7;
+                  opacity: 0.8;
+                }
+              }
+            }
+            .first {
+              position: absolute;
+              top: 150px;
+              left: 37.5%;
+              background-color: white;
+              border-radius: 40px;
+              .second {
+                img {
+                  border: 0px solid white;
+                  border-radius: 40px;
+                  width: 80px;
+                  height: 80px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #myPlan {
+    background-color: $main-color;
+    color: white;
+    text-align: center;
+    padding-bottom: 90px;
+    .forTitle {
+      padding: 90px 80px 40px;
+      h2 {
+        font-size: $title-size;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      h6 {
+        font-size: $sec-title-size;
+        font-weight: 500;
+        line-height: 1.7;
+      }
+    }
+    .forItem {
+      i {
+        width: 64px;
+        height: 64px;
+        color: $main-color;
+        background-color: white;
+        border-radius: 40px;
+        line-height: 64px;
+        font-size: 25px;
+        box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07) !important;
+      }
+      h5 {
+        font-weight: 700;
+        font-size: $sec-title-size;
+        padding: 20px 0;
+      }
+      p {
+        font-size: $text-size;
+        font-weight: 500;
+        line-height: 1.7;
+      }
+    }
+  }
+
+  #myTeam {
+    text-align: center;
+    padding-bottom: 70px;
+
+    .forTitle {
+      padding: 100px 20% 20px;
+      h2 {
+        font-size: $title-size;
+        font-weight: 700;
+        line-height: 1.5;
+        color: $title-color;
+        margin-bottom: 25px;
+      }
+      h6 {
+        font-size: $sec-title-size;
+        font-weight: 500;
+        line-height: 1.7;
+        color: #8898aa;
+        // margin-bottom: 40px;
+      }
+    }
+    .fotItem {
+      img {
+        width: 182px;
+        height: 182px;
+        border-radius: 50%;
+        box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07) !important;
+        margin-bottom: 25px;
+        margin-top: 35px;
+
+      }
+      h5 {
+        color: $title-color;
+        font-size: $sec-title-size;
+        font-weight: 700;
+        padding: 5px 0;
+      }
+      h6 {
+        font-weight: 500;
+        line-height: 1.7;
+        color: #8898aa;
+      }
+      .forIcons {
+        padding-top: 7px;
+        i {
+          color: white;
+          background-color: #2dce89;
+          width: 38px;
+          height: 38px;
+          line-height: 38px;
+          border-radius: 50%;
+          box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+          font-size: 14px;
+          margin-right: 5px;
+          transition: 0.3s linear;
+          &:hover {
+            transform: translateY(-3px);
+          }
+        }
+      }
+    }
+  }
+
+  #myRecent {
+    background-color: #f4f5f7;
+    padding-bottom: 100px;
+
+    .forTitle {
+      text-align: center;
+      padding: 90px 80px 50px;
+      h2 {
+        font-size: $title-size;
+        font-weight: 700;
+        line-height: 1.5;
+        color: $title-color;
+      }
+      h5 {
+        font-size: $sec-title-size;
+        color: $main-color;
+        line-height: 1.7;
+      }
+    }
+    .forCard {
+      background-color: white;
+      box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+      transition: 0.2s linear;
+      &:hover {
+        transform: translateY(-20px);
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      .forInfo {
+        padding: 25px;
+        h3 {
+          font-size: $sec-title-size;
+          color: $title-color;
+          font-weight: 700;
+          line-height: 1.5;
+        }
+        h6 {
+          color: #8898aa;
+          font-size: $text-size;
+          font-weight: 500;
+          line-height: 1.7;
+        }
+        p {
+          font-size: $text-size;
+          line-height: 1.7;
+          font-weight: 500;
+          color: #525f7f;
+        }
+        button {
+          width: 116px;
+          height: 42px;
+          border: 0;
+          background-color: $main-color;
+          border-radius: 5px;
+          box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+          color: white;
+          font-weight: 600;
+          font-size: $btn-size;
+          transition: 0.1s linear;
+          &:hover {
+            transform: translateY(-1px);
+          }
+        }
+      }
+    }
+  }
+
+  @extend %myFooter;
+}
